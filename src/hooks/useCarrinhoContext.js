@@ -33,7 +33,7 @@ export const useCarrinhoContext = () => {
     const produto = carrinho.find((item) => item.id === id);
 
     if (produto && produto.quantidade > 1) {
-      dispatch(updateProdutoAction(id, novoProduto.quantidade - 1));
+      dispatch(updateProdutoAction(id, produto.quantidade - 1));
     } else {
       dispatch(removeProdutoAction(id));
     }
