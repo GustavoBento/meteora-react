@@ -23,6 +23,7 @@ const ItemCarrinho = ({ itemCarrinho }) => {
             itemCarrinho={itemCarrinho}
             adicionarProduto={adicionarProduto}
             removerProduto={removerProduto}
+            removerProdutoCarrinho={removerProdutoCarrinho}
           />
           <Botao
             variant="deleteItem"
